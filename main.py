@@ -110,4 +110,4 @@ async def on_message(message):
             await message.channel.send("用法: `抽獎 人數 金額` 例如 `抽獎 3 100`")
         return
 
-bot.run(TOKEN)
+bot.run(os.getenv("TOKEN"))
